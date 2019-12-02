@@ -1,0 +1,26 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(texto) {
+
+        document.write(texto);
+
+        //  Uma função pode ser chamada dentro de outra função
+        pulaLinha();
+    }
+
+    var idadeAninha = 13;
+    var idadePaulinha = 8;
+    var difIdades = idadeAninha - idadePaulinha;
+
+    mostra("Eu tenho 13 anos");
+    mostra("Eu tenho 8 anos");
+    mostra("A diferença nas nossas idades é: " + difIdades);
+
+</script>

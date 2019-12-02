@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha(){
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    // Se passarmos 2 parâmetros, precisamos chamar 2 parâmetros tambem
+    //Retornando o valor da função
+    function calculaImc(peso , altura){
+        var imc = peso / (altura*altura);
+        return imc;
+    }
+
+    // Variáveis auxiliares
+    var imcRafael = calculaImc(85, 1.85);
+    var imcCassia = calculaImc(115, 1.76);
+
+    mostra(imcRafael);
+    mostra(imcCassia);
+
+</script>

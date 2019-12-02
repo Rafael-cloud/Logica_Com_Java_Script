@@ -1,0 +1,39 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+        document.write(frase);
+        pulaLinha();
+    }
+
+    // Aqui eu utilizo a função Math.random para gerar números aleatórios e depois Math.round, para arredondar  valor dessa função e multiplico por 10, para que ele exiba valores de 1 a 10
+    var numeroPensado = Math.round(Math.random() * 10);
+
+    while (tentativas <= 3) {
+        var chute = parseInt(prompt(" Digite seu chute"));
+
+        // Ele vai exibir o número pensado no console
+        console.log(numeroPensado);
+
+        if (chute == numeroPensado) {
+            mostra("Você ACERTOU, o número era " + numeroPensado);
+            // Quando o usuário acertar, independente do número de tentativas restantes, é para quebrar o laço de reptição e parar de repetir
+            break;
+        }
+
+        else {
+            mostra(" Você ERROU!");
+        }
+
+        tentativas++;
+    }
+
+    mostra("FIM");
+
+</script>

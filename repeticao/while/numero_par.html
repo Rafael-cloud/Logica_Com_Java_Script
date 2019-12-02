@@ -1,0 +1,29 @@
+<meta charset="UTF-8">
+
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br><br>");
+    }
+
+    function mostra(texto) {
+
+        document.write(texto);
+
+        pulaLinha();
+    }
+
+    var contador = 2;
+
+    // Solução professor: while(contador <=100)
+
+    while (contador > 1 && contador <= 100) {
+
+        mostra("Seu número foi " + contador);
+        contador = contador + 2;
+
+    }
+
+
+</script>
